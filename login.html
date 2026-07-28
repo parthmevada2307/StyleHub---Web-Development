@@ -1,0 +1,88 @@
+<!-- FreshBite - Food Ordering Template (No Database) -->
+<!-- Free Web Development Internship Online Task -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="color: #E91E63; background: #FFD700; font-size: 50px; align-items: center; text-align: center;">      Login   </h1>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#1A1A2E;">
+<!-- Navigation -->
+<table align="center" cellpadding="20" cellspacing="20">
+    <tr>
+        <td align="center" style="border:1px solid #DDDDDD; border-radius:10px; background-color: white;">
+            <div style="padding:20px;">
+                <img src="icon1.jpg" style="width: 120px; height: 120px;">
+                <h1 style="color:#E91E63;">Welcome to StyleHub</h1>
+                <p>Login to continue your fashion journey</p>
+
+                <div>
+                    <Label>Email: </Label>
+                    <input type="email" id="email" placeholder="Email Address" required="required" style="border-radius: 10px; width:60%; margin:10px; padding:8px;">
+                    <p id="emailError" style="color:red; font-size:14px;"></p>
+                </div>
+
+                <div>
+                    <Label>Password: </Label>
+                    <input type="password" id="password" placeholder="Password" required="required" style="border-radius: 10px; width:60%; margin: 10px; padding:8px;">
+                    <p id="passwordError" style="color:red; font-size:14px;"></p>
+                </div>
+
+                <div>
+                    <label><input type="checkbox" style="margin: 10px; padding:8px;"> Remember Me</labeL>
+                </div>
+
+                <div>
+                    <button onclick=login() style="padding:12px 25px;background:#E91E63;color:#FFD700;border:none;border-radius:8px; margin: 10px;">
+                        Login
+                    </button>
+
+                    <p>Do not have an account? <a href="register.html">Register</a></p>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<script>
+    function login() {
+
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        // Clear previous errors
+        document.getElementById("emailError").innerHTML = "";
+        document.getElementById("passwordError").innerHTML = "";
+        // Validation
+        if (email === "") {
+            document.getElementById("emailError").innerHTML =
+                "Please Enter Email Address";
+            return;
+        }
+        if (password === "") {
+            document.getElementById("passwordError").innerHTML =
+                "Please Enter Password";
+            return;
+        }
+        if (password.length < 8) {
+            document.getElementById("passwordError").innerHTML =
+                "Password must be at least 8 characters";
+            return;
+        }
+        let user = JSON.parse(localStorage.getItem("user"));
+        if (user == null) {
+            document.getElementById("emailError").innerHTML =
+                "No account found. Please Register First.";
+            return;
+        }
+        if (email === user.email && password === user.password) {
+            alert("Login Successfully");
+            window.location.href = "homepage.html";
+        } else {
+            document.getElementById("passwordError").innerHTML =
+                "Invalid Email or Password";
+        }
+    }
+</script>
+
+</body>
+</html>

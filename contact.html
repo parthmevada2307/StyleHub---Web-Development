@@ -1,0 +1,289 @@
+<!-- FreshBite - Food Ordering Template (No Database) -->
+<!-- Free Web Development Internship Online Task -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="color: #E91E63; background: #FFD700; font-size: 50px; align-items: center; text-align: center;">     Contact Us   </h1>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#1A1A2E;">
+<!-- Navigation -->
+<div align="center" style="margin-top:-98px;">
+    <div id="topbar" style="display:flex;
+            align-items:center;
+            height:30px;
+            padding:20px;
+            top:0;">
+
+        <button onclick="toggleSidebar()"
+                style="
+                font-size:32px;
+                border:2px solid #2D1B12;
+                background:#E91E63;
+                cursor:pointer;
+                padding:5px 10px;
+                border-radius:8px;">
+            ☰
+        </button>
+
+    </div>
+    <div id="sidebar"
+         style="
+position:fixed;
+top:0;
+left:-320px;
+width:300px;
+height:100%;
+background:#1A1A2E;
+overflow-y:auto;
+transition:0.4s;
+box-shadow:4px 0 12px rgba(0,0,0,0.25);">
+
+
+        <button onclick="toggleSidebar()"
+                style="
+        font-size:32px;
+        border:2px solid black;
+        background:Goldenrod;
+        cursor:pointer;
+margin-top: 2px;">
+            X
+        </button>
+
+        <a href="homepage.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color: Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Home
+        </a>
+
+        <a href="list.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Product Listing
+        </a>
+
+        <a href="product.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Product Detail
+        </a>
+
+        <a href="shopping.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Shopping Cart
+        </a>
+
+        <a href="checkout.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Checkout
+        </a>
+
+        <a href="user.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            User Account
+        </a>
+
+        <a href="about.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            About Us
+        </a>
+
+        <a href="contact.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Contact Us
+        </a>
+
+    </div>
+
+    <table align="center" cellpadding="20" cellspacing="20">
+        <tr>
+            <td align="center" style="border:1px solid #DDDDDD; border-radius:10px; background-color: white;">
+
+                <h2 style="color:#E91E63;">"We'd love to hear from you!"</h2>
+                <h2 style="color:#FFD700;">Address:</h2>
+                <p style="color:#E91E63;">
+                    StyleHub --- Ahmedabad, Gujarat, 380005
+                </p>
+
+                <h2 style="color:#FFD700;">Phone:</h2>
+                <p style="color:#E91E63;">+91 63534 28345</p>
+
+                <h2 style="color:#FFD700;">Email:</h2>
+                <p style="color:#E91E63;">stylehub123@gmail.com</p>
+
+                <h2 style="color:#FFD700;">Business Hours:</h2>
+                <p style="color:#E91E63;">Monday - Friday: 9 AM – 10 PM</p>
+
+                <div style="padding:20px; color: #FFD700;">
+                    <h2>Contact Form:</h2>
+                </div>
+                    <div>
+                        <Label>Name: </Label>
+                        <input type="text" id="name" placeholder="Enter Username" required="required" style="border-radius: 10px; width:60%; margin:10px; padding:8px;">
+                        <p id="nameError" style="color:red; font-size:14px;"></p>
+                    </div>
+
+                    <div>
+                        <Label>Email: </Label>
+                        <input type="email" id="email" placeholder="Enter Email Address" required="required" style="border-radius: 10px; width:60%; margin:10px; padding:8px;">
+                        <p id="emailError" style="color:red; font-size:14px;"></p>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap:10px;">
+                        <Label>Phone: </Label>
+                        <select id="countryCode" style="padding:8px;">
+                            <option value="+91">India (+91)</option>
+                            <option value="+1">USA (+1)</option>
+                            <option value="+44">UK (+44)</option>
+                            <option value="+61">Australia (+61)</option>
+                            <option value="+971">UAE (+971)</option>
+                            <option value="+81">Japan (+81)</option>
+                            <option value="+86">China (+86)</option>
+                            <option value="+49">Germany (+49)</option>
+                            <option value="+33">France (+33)</option>
+                            <option value="+65">Singapore (+65)</option>
+                        </select>
+
+                        <input type="tel" id="phone" placeholder="Enter Phone No." required="required" style="border-radius: 10px; width:60%; margin: 10px; padding:8px;">
+                    </div>
+                    <p id="phoneError" style="color:red; font-size:14px;"></p>
+
+                    <div>
+                        <Label>Message (Optional): </Label>
+                        <input type="text" id="message" placeholder="Enter Message Here" style="border-radius: 10px; width:60%; margin: 10px; padding:16px;">
+                    </div>
+
+                    <div>
+                        <button onclick=send() style="padding:12px 25px;background:#E91E63;color:#FFD700;border:none;border-radius:8px; margin: 10px;">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <h2 style="color: #E91E63;">Location by Map:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.7484277597!2d72.41492786829916!3d23.020474102254077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1784704628679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function send() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let message = document.getElementById("message").value;
+
+            document.getElementById("nameError").innerHTML = "";
+            document.getElementById("emailError").innerHTML = "";
+            document.getElementById("phoneError").innerHTML = "";
+
+            if (name === "") {
+                document.getElementById("nameError").innerHTML = "Please Enter Name";
+                return;
+            }
+            if (email === "") {
+                document.getElementById("emailError").innerHTML = "Please Enter Email Address";
+                return;
+            }
+            if (phone === "") {
+                document.getElementById("phoneError").innerHTML = "Please Enter Phone No.";
+                return;
+            }
+            if (phone.length !== 10) {
+                document.getElementById("phoneError").innerHTML = "Phone number must have exact 10 digits";
+                return;
+            }
+            let user = {name, email, phone, message};
+            localStorage.setItem("user", JSON.stringify(user));
+            alert("Message Sent Successfully");
+            window.location.href="contact.html";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

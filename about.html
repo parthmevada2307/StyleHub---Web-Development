@@ -1,0 +1,218 @@
+<!-- FreshBite - Food Ordering Template (No Database) -->
+<!-- Free Web Development Internship Online Task -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="color: #E91E63; background: #FFD700; font-size: 50px; align-items: center; text-align: center;">     About Us   </h1>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#1A1A2E;">
+<!-- Navigation -->
+<div align="center" style="margin-top:-98px;">
+    <div id="topbar" style="display:flex;
+            align-items:center;
+            height:30px;
+            padding:20px;
+            top:0;">
+
+        <button onclick="toggleSidebar()"
+                style="
+                font-size:32px;
+                border:2px solid #2D1B12;
+                background:#E91E63;
+                cursor:pointer;
+                padding:5px 10px;
+                border-radius:8px;">
+            ☰
+        </button>
+
+    </div>
+    <div id="sidebar"
+         style="
+position:fixed;
+top:0;
+left:-320px;
+width:300px;
+height:100%;
+background:#1A1A2E;
+overflow-y:auto;
+transition:0.4s;
+box-shadow:4px 0 12px rgba(0,0,0,0.25);">
+
+
+        <button onclick="toggleSidebar()"
+                style="
+        font-size:32px;
+        border:2px solid black;
+        background:Goldenrod;
+        cursor:pointer;
+margin-top: 2px;">
+            X
+        </button>
+
+        <a href="homepage.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color: Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Home
+        </a>
+
+        <a href="list.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Product Listing
+        </a>
+
+        <a href="product.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Product Detail
+        </a>
+
+        <a href="shopping.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Shopping Cart
+        </a>
+
+        <a href="checkout.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Checkout
+        </a>
+
+        <a href="user.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            User Account
+        </a>
+
+        <a href="about.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            About Us
+        </a>
+
+        <a href="contact.html"
+           style="
+display:flex;
+align-items:center;
+padding:18px;
+margin:15px;
+background:#E91E63;
+border-radius:10px;
+text-decoration:none;
+color:Goldenrod;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);">
+            Contact Us
+        </a>
+
+    </div>
+
+    <table align="center" cellpadding="20" cellspacing="20">
+        <tr>
+            <td align="center" style="border:1px solid #DDDDDD; border-radius:10px; background-color:white;">
+
+                <h2 style="color: #FFD700;">
+                    "Style meets comfort. Fashion for every occasion."
+                </h2>
+                <p style="color:#E91E63;">
+                    StyleHub is an online fashion shopping platform that offers
+                    trendy and premium-quality clothing, footwear, and accessories
+                    for men, women, and kids. Our mission is to provide a seamless
+                    shopping experience with stylish collections, affordable prices,
+                    and exceptional customer service.
+                </p>
+                <h2 style="color: #FFD700;">Our Mission</h2>
+                <ul style="color: #E91E63; text-align:center;">
+                    <li>Offer stylish and high-quality fashion products</li>
+                    <li>Provide a secure and hassle-free shopping experience</li>
+                    <li>Deliver products quickly and reliably</li>
+                    <li>Make fashion affordable for everyone</li>
+                </ul>
+                <h2 style="color: #FFD700;">Our Services</h2>
+                <ul style="color: #E91E63; text-align:center;">
+                    <li>Men's, Women's & Kids' Fashion</li>
+                    <li>Footwear & Accessories Collection</li>
+                    <li>Secure Online Shopping</li>
+                    <li>Fast Delivery & Easy Returns</li>
+                </ul>
+
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
